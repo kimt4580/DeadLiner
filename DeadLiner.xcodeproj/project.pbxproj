@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		91752EACB0D86DE2E319F9EF /* Pods_DeadLiner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9434BE31FE00B4A01F4C63ED /* Pods_DeadLiner.framework */; };
+		DA4F1B8E2A012C4900A0AF20 /* TastManagerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4F1B8D2A012C4900A0AF20 /* TastManagerService.swift */; };
 		DA8AFF632A006AB500C1F8B4 /* DeadLinerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8AFF622A006AB500C1F8B4 /* DeadLinerApp.swift */; };
 		DA8AFF652A006AB500C1F8B4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8AFF642A006AB500C1F8B4 /* ContentView.swift */; };
 		DA8AFF672A006AB600C1F8B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA8AFF662A006AB600C1F8B4 /* Assets.xcassets */; };
@@ -14,9 +16,14 @@
 		DA8AFF752A006C3700C1F8B4 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8AFF742A006C3700C1F8B4 /* ListView.swift */; };
 		DA8AFF772A006DD500C1F8B4 /* ListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8AFF762A006DD500C1F8B4 /* ListCellView.swift */; };
 		DA8AFF792A00750000C1F8B4 /* MainTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8AFF782A00750000C1F8B4 /* MainTitleView.swift */; };
+		DAA858A72A012F1000FE9034 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA858A62A012F1000FE9034 /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2351D92D4391ABCDF99609E3 /* Pods-DeadLiner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeadLiner.debug.xcconfig"; path = "Target Support Files/Pods-DeadLiner/Pods-DeadLiner.debug.xcconfig"; sourceTree = "<group>"; };
+		403BC0AE5E4875C00FAA81FF /* Pods-DeadLiner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeadLiner.release.xcconfig"; path = "Target Support Files/Pods-DeadLiner/Pods-DeadLiner.release.xcconfig"; sourceTree = "<group>"; };
+		9434BE31FE00B4A01F4C63ED /* Pods_DeadLiner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeadLiner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA4F1B8D2A012C4900A0AF20 /* TastManagerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastManagerService.swift; sourceTree = "<group>"; };
 		DA8AFF5F2A006AB500C1F8B4 /* DeadLiner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeadLiner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA8AFF622A006AB500C1F8B4 /* DeadLinerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeadLinerApp.swift; sourceTree = "<group>"; };
 		DA8AFF642A006AB500C1F8B4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -25,6 +32,7 @@
 		DA8AFF742A006C3700C1F8B4 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		DA8AFF762A006DD500C1F8B4 /* ListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCellView.swift; sourceTree = "<group>"; };
 		DA8AFF782A00750000C1F8B4 /* MainTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTitleView.swift; sourceTree = "<group>"; };
+		DAA858A62A012F1000FE9034 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,17 +40,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91752EACB0D86DE2E319F9EF /* Pods_DeadLiner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9ADC5DF92162BADF10901445 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2351D92D4391ABCDF99609E3 /* Pods-DeadLiner.debug.xcconfig */,
+				403BC0AE5E4875C00FAA81FF /* Pods-DeadLiner.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DA8AFF562A006AB500C1F8B4 = {
 			isa = PBXGroup;
 			children = (
 				DA8AFF612A006AB500C1F8B4 /* DeadLiner */,
 				DA8AFF602A006AB500C1F8B4 /* Products */,
+				9ADC5DF92162BADF10901445 /* Pods */,
+				DE1E120C52D4D9D0CCD08430 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +117,7 @@
 		DA8AFF722A006ADD00C1F8B4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DAA858A62A012F1000FE9034 /* Task.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -104,8 +125,17 @@
 		DA8AFF732A006AE900C1F8B4 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				DA4F1B8D2A012C4900A0AF20 /* TastManagerService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		DE1E120C52D4D9D0CCD08430 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9434BE31FE00B4A01F4C63ED /* Pods_DeadLiner.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -115,9 +145,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA8AFF6D2A006AB600C1F8B4 /* Build configuration list for PBXNativeTarget "DeadLiner" */;
 			buildPhases = (
+				B8A67653D4462AC62101F065 /* [CP] Check Pods Manifest.lock */,
 				DA8AFF5B2A006AB500C1F8B4 /* Sources */,
 				DA8AFF5C2A006AB500C1F8B4 /* Frameworks */,
 				DA8AFF5D2A006AB500C1F8B4 /* Resources */,
+				E05D0367E3D7822CD0ABE9A7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -173,15 +205,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B8A67653D4462AC62101F065 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DeadLiner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E05D0367E3D7822CD0ABE9A7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DeadLiner/Pods-DeadLiner-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DeadLiner/Pods-DeadLiner-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DeadLiner/Pods-DeadLiner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DA8AFF5B2A006AB500C1F8B4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				DA8AFF772A006DD500C1F8B4 /* ListCellView.swift in Sources */,
+				DA4F1B8E2A012C4900A0AF20 /* TastManagerService.swift in Sources */,
 				DA8AFF652A006AB500C1F8B4 /* ContentView.swift in Sources */,
 				DA8AFF632A006AB500C1F8B4 /* DeadLinerApp.swift in Sources */,
 				DA8AFF752A006C3700C1F8B4 /* ListView.swift in Sources */,
+				DAA858A72A012F1000FE9034 /* Task.swift in Sources */,
 				DA8AFF792A00750000C1F8B4 /* MainTitleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,6 +381,7 @@
 		};
 		DA8AFF6E2A006AB600C1F8B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2351D92D4391ABCDF99609E3 /* Pods-DeadLiner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -334,6 +411,7 @@
 		};
 		DA8AFF6F2A006AB600C1F8B4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 403BC0AE5E4875C00FAA81FF /* Pods-DeadLiner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
