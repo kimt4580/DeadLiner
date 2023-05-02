@@ -8,17 +8,17 @@
 import SwiftUI
 
 struct ListView: View {
-    var body: some View {
-      List {
-        ListCellView()
-      }
-      .listStyle(.grouped)
-      .scrollContentBackground(.hidden)
+  var body: some View {
+    List {
+      ListCellView()
     }
+    .listStyle(.grouped)
+    .scrollContentBackground(.hidden)
+  }
 }
 
 struct ListView_Previews: PreviewProvider {
-    static var previews: some View {
-      ListView()
-    }
+  static var previews: some View {
+    ListView()
+  }
 }
