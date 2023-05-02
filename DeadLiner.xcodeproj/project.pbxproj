@@ -11,6 +11,7 @@
 		DA4F1B8E2A012C4900A0AF20 /* TastManagerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4F1B8D2A012C4900A0AF20 /* TastManagerService.swift */; };
 		DA88E9E62A014D6C00DB773F /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA88E9E52A014D6C00DB773F /* DatePickerView.swift */; };
 		DA88E9E82A01533600DB773F /* ListCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA88E9E72A01533600DB773F /* ListCellViewModel.swift */; };
+		DA88E9EA2A01890D00DB773F /* AddScheduleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA88E9E92A01890D00DB773F /* AddScheduleButtonView.swift */; };
 		DA8AFF632A006AB500C1F8B4 /* DeadLinerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8AFF622A006AB500C1F8B4 /* DeadLinerApp.swift */; };
 		DA8AFF652A006AB500C1F8B4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8AFF642A006AB500C1F8B4 /* ContentView.swift */; };
 		DA8AFF672A006AB600C1F8B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA8AFF662A006AB600C1F8B4 /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 		DA4F1B8D2A012C4900A0AF20 /* TastManagerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastManagerService.swift; sourceTree = "<group>"; };
 		DA88E9E52A014D6C00DB773F /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
 		DA88E9E72A01533600DB773F /* ListCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCellViewModel.swift; sourceTree = "<group>"; };
+		DA88E9E92A01890D00DB773F /* AddScheduleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddScheduleButtonView.swift; sourceTree = "<group>"; };
 		DA8AFF5F2A006AB500C1F8B4 /* DeadLiner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeadLiner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA8AFF622A006AB500C1F8B4 /* DeadLinerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeadLinerApp.swift; sourceTree = "<group>"; };
 		DA8AFF642A006AB500C1F8B4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				DA8AFF742A006C3700C1F8B4 /* ListView.swift */,
 				DA8AFF762A006DD500C1F8B4 /* ListCellView.swift */,
 				DA88E9E52A014D6C00DB773F /* DatePickerView.swift */,
+				DA88E9E92A01890D00DB773F /* AddScheduleButtonView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				DA8AFF752A006C3700C1F8B4 /* ListView.swift in Sources */,
 				DAA858A72A012F1000FE9034 /* Task.swift in Sources */,
 				DA88E9E62A014D6C00DB773F /* DatePickerView.swift in Sources */,
+				DA88E9EA2A01890D00DB773F /* AddScheduleButtonView.swift in Sources */,
 				DA8AFF792A00750000C1F8B4 /* MainTitleView.swift in Sources */,
 				DA88E9E82A01533600DB773F /* ListCellViewModel.swift in Sources */,
 			);

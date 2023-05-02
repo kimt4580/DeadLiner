@@ -19,7 +19,7 @@ class Task: Object, ObjectKeyIdentifiable {
     self.title = title
     self.date = date
     self.body = body
-    self.isOverdate = isOverdate
+    self.isOverdate = (self.date + (60*60*60) < Date()) == true
   }
 }
 
