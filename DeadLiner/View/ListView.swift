@@ -14,7 +14,6 @@ struct ListView: View {
       }
       .listStyle(.grouped)
       .scrollContentBackground(.hidden)
-     // .frame(alignment: .bottomTrailing)
     }
 }
 
