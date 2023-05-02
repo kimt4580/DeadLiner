@@ -12,7 +12,10 @@ struct ListView: View {
   
   var body: some View {
     List {
-      ListCellView(date: $date, listCellViewModel: ListCellViewModel())
+      ListCellView(
+        date: $date,
+        listCellViewModel: ListCellViewModel()
+      )
     }
     .listStyle(.grouped)
     .scrollContentBackground(.hidden)
