@@ -8,6 +8,8 @@
 import RealmSwift
 
 class TaskManagerService {
+  
+  var userTasks: [Task] = []
   private var realm: Realm?
   
   init() {
@@ -24,6 +26,45 @@ class TaskManagerService {
         let task = Task(title: task.title,
                         data: task.date,
                         body: task.body)
+        
+        realm?.add(task)
+      })
+    } catch {
+      print(error)
+    }
+  }
+  
+  func read() -> [Task] {
+    guard let tasks = realm?.objects(Task.self) else {
+      return []
+    }
+    
+    return Array(tasks)
+  }
+  
+  func update(task: Task) {
+    let tasks = read()
+    guard let index = tasks.firstIndex(of: task) else {
+      return
+    }
+    
+    do {
+      try realm?.write({
+        tasks[index].title = task.title
+        tasks[index].body = task.body
+        tasks[index].date = task.date
+        tasks[index].isOverdate = (task.date + (60*60*24) < Date()) == true
+      })
+    } catch {
+      print(error)
+    }
+  }
+  
+  func delete(task: Task) {
+    do {
+      try realm?.write({
+        realm?.delete(task)
+        self.userTasks = read()
       })
     } catch {
       print(error)
