@@ -10,7 +10,7 @@ import SwiftUI
 struct ListCellView: View {
   var body: some View {
     Button {
-    
+      
     } label: {
       HStack(alignment: .center) {
         Image(systemName: "square.and.arrow.up.circle.fill")
@@ -50,7 +50,7 @@ struct ListCellView: View {
 }
 
 struct ListCellView_Previews: PreviewProvider {
-    static var previews: some View {
-        ListCellView()
-    }
+  static var previews: some View {
+    ListCellView()
+  }
 }
