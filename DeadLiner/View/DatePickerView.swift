@@ -9,6 +9,7 @@ import SwiftUI
 
 struct DatePickerView: View {
   @State var date = Date()
+  @State private var text: String = ""
   
   var body: some View {
     VStack {
@@ -24,7 +25,11 @@ struct DatePickerView: View {
       )
       .datePickerStyle(.graphical)
       .background(Color.clear)
-      .padding()
+     TextEditor(text: $text)
+        .background(Color.clear)
+        .foregroundColor(Color.black)
+        .border(.black)
+        .padding()
     }
   }
 }
