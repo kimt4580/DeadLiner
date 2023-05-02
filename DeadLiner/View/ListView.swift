@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct ListView: View {
+  @State var date = Date()
+  
   var body: some View {
     List {
-      ListCellView()
+      ListCellView(date: $date, listCellViewModel: ListCellViewModel())
     }
     .listStyle(.grouped)
     .scrollContentBackground(.hidden)

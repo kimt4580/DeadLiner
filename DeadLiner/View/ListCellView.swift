@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct ListCellView: View {
+  @Binding var date: Date
+  @ObservedObject private(set) var listCellViewModel: ListCellViewModel
+  
   var body: some View {
     Button {
-      
+      listCellViewModel.buttonTapped()
     } label: {
       HStack(alignment: .center) {
         Image(systemName: "square.and.arrow.up.circle.fill")
@@ -46,11 +49,14 @@ struct ListCellView: View {
       }
       .tint(.red)
     }
+    .sheet(isPresented: $listCellViewModel.isButtonTapped) {
+      DatePickerView()
+    }
   }
 }
 
-struct ListCellView_Previews: PreviewProvider {
-  static var previews: some View {
-    ListCellView()
-  }
-}
+//struct ListCellView_Previews: PreviewProvider {
+//  static var previews: some View {
+//    ListCellView()
+//  }
+//}
