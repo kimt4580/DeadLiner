@@ -37,7 +37,6 @@ struct ListCellView: View {
           .padding()
         
       }
-      //.frame(maxWidth: .infinity, alignment: .leading)
     }
     .foregroundColor(Color.black)
     .background(Color.clear)
