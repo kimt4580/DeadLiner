@@ -11,13 +11,15 @@ struct ContentView: View {
     var body: some View {
       VStack {
         Text("List")
+          .font(.system(size: 20))
         ListView()
+        AddScheduleButtonView( addScheduleButtonViewModel: AddScheduleButtonViewModel())
       }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+//struct ContentView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ContentView()
+//    }
+//}
