@@ -19,6 +19,9 @@
 		DA8AFF752A006C3700C1F8B4 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8AFF742A006C3700C1F8B4 /* ListView.swift */; };
 		DA8AFF772A006DD500C1F8B4 /* ListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8AFF762A006DD500C1F8B4 /* ListCellView.swift */; };
 		DA8AFF792A00750000C1F8B4 /* MainTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8AFF782A00750000C1F8B4 /* MainTitleView.swift */; };
+		DA9AC0662A029FA10097129F /* AddScheduleButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9AC0652A029FA10097129F /* AddScheduleButtonViewModel.swift */; };
+		DA9AC0682A02B55C0097129F /* ListCellCheckboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9AC0672A02B55C0097129F /* ListCellCheckboxView.swift */; };
+		DA9AC06A2A02B6530097129F /* ListCellCheckboxViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9AC0692A02B6530097129F /* ListCellCheckboxViewModel.swift */; };
 		DAA858A72A012F1000FE9034 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA858A62A012F1000FE9034 /* Task.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +41,9 @@
 		DA8AFF742A006C3700C1F8B4 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		DA8AFF762A006DD500C1F8B4 /* ListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCellView.swift; sourceTree = "<group>"; };
 		DA8AFF782A00750000C1F8B4 /* MainTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTitleView.swift; sourceTree = "<group>"; };
+		DA9AC0652A029FA10097129F /* AddScheduleButtonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddScheduleButtonViewModel.swift; sourceTree = "<group>"; };
+		DA9AC0672A02B55C0097129F /* ListCellCheckboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCellCheckboxView.swift; sourceTree = "<group>"; };
+		DA9AC0692A02B6530097129F /* ListCellCheckboxViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCellCheckboxViewModel.swift; sourceTree = "<group>"; };
 		DAA858A62A012F1000FE9034 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,6 +117,7 @@
 				DA8AFF762A006DD500C1F8B4 /* ListCellView.swift */,
 				DA88E9E52A014D6C00DB773F /* DatePickerView.swift */,
 				DA88E9E92A01890D00DB773F /* AddScheduleButtonView.swift */,
+				DA9AC0672A02B55C0097129F /* ListCellCheckboxView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -119,6 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				DA88E9E72A01533600DB773F /* ListCellViewModel.swift */,
+				DA9AC0652A029FA10097129F /* AddScheduleButtonViewModel.swift */,
+				DA9AC0692A02B6530097129F /* ListCellCheckboxViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -264,9 +273,12 @@
 				DA8AFF772A006DD500C1F8B4 /* ListCellView.swift in Sources */,
 				DA4F1B8E2A012C4900A0AF20 /* TastManagerService.swift in Sources */,
 				DA8AFF652A006AB500C1F8B4 /* ContentView.swift in Sources */,
+				DA9AC0682A02B55C0097129F /* ListCellCheckboxView.swift in Sources */,
 				DA8AFF632A006AB500C1F8B4 /* DeadLinerApp.swift in Sources */,
 				DA8AFF752A006C3700C1F8B4 /* ListView.swift in Sources */,
+				DA9AC0662A029FA10097129F /* AddScheduleButtonViewModel.swift in Sources */,
 				DAA858A72A012F1000FE9034 /* Task.swift in Sources */,
+				DA9AC06A2A02B6530097129F /* ListCellCheckboxViewModel.swift in Sources */,
 				DA88E9E62A014D6C00DB773F /* DatePickerView.swift in Sources */,
 				DA88E9EA2A01890D00DB773F /* AddScheduleButtonView.swift in Sources */,
 				DA8AFF792A00750000C1F8B4 /* MainTitleView.swift in Sources */,

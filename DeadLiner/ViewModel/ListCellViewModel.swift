@@ -8,10 +8,10 @@
 import Foundation
 
 final class ListCellViewModel: ObservableObject {
-  @Published var isButtonTapped = false
+  @Published var isListRowTapped = false
   
-  func buttonTapped() {
-    isButtonTapped.toggle()
+  func listRowTapped() {
+    isListRowTapped.toggle()
   }
   
 }
