@@ -13,15 +13,11 @@ struct ListCellView: View {
   
   var body: some View {
     Button {
-      listCellViewModel.buttonTapped()
+      listCellViewModel.listRowTapped()
     } label: {
       HStack(alignment: .center) {
-        Image(systemName: "square.and.arrow.up.circle.fill")
-          .resizable()
-          .aspectRatio(contentMode: .fit)
-          .clipShape(Circle())
-          .frame(width: 60)
-          .padding()
+        
+        ListCellCheckboxView(listCellCheckboxViewModel: ListCellCheckboxViewModel())
         
         VStack(alignment: .leading) {
           Text("Title")
@@ -48,7 +44,7 @@ struct ListCellView: View {
       }
       .tint(.red)
     }
-    .sheet(isPresented: $listCellViewModel.isButtonTapped) {
+    .sheet(isPresented: $listCellViewModel.isListRowTapped) {
       DatePickerView()
     }
   }
