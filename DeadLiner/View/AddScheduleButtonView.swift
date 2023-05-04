@@ -33,8 +33,8 @@ struct AddScheduleButtonView: View {
   }
 }
 
-//struct AddScheduleButtonView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        AddScheduleButtonView()
-//    }
-//}
+struct AddScheduleButtonView_Previews: PreviewProvider {
+    static var previews: some View {
+        AddScheduleButtonView(addScheduleButtonViewModel: AddScheduleButtonViewModel())
+    }
+}
