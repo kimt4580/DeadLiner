@@ -10,6 +10,7 @@ import RealmSwift
 class TaskManagerService {
   
   var userTasks: [Task] = []
+  var userTaskHistory: [History] = []
   private var realm: Realm?
   
   init() {
@@ -18,13 +19,14 @@ class TaskManagerService {
     } catch {
       print(error)
     }
+    self.userTasks = self.read()
   }
   
   func create(_ task: Task) {
     do {
       try realm?.write ({
         let task = Task(title: task.title,
-                        data: task.date,
+                        date: task.date,
                         body: task.body)
         
         realm?.add(task)
@@ -64,7 +66,6 @@ class TaskManagerService {
     do {
       try realm?.write({
         realm?.delete(task)
-        self.userTasks = read()
       })
     } catch {
       print(error)
