@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct DeadLinerApp: App {
+  let service = TaskManagerService()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(contentViewModel: ContentViewModel(withService: service))
         }
     }
 }

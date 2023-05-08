@@ -3,11 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		91752EACB0D86DE2E319F9EF /* Pods_DeadLiner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9434BE31FE00B4A01F4C63ED /* Pods_DeadLiner.framework */; };
+		D62987732A08871500CBE2E7 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62987722A08871500CBE2E7 /* History.swift */; };
+		D62987752A0888AA00CBE2E7 /* TaskService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62987742A0888AA00CBE2E7 /* TaskService.swift */; };
+		D6CC329A2A08B8A60066A94D /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC32992A08B8A60066A94D /* ListViewModel.swift */; };
+		D6CC329C2A08BC1F0066A94D /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC329B2A08BC1F0066A94D /* ContentViewModel.swift */; };
+		D6CC32A02A08BFA00066A94D /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC329F2A08BFA00066A94D /* RegisterView.swift */; };
+		D6CC32A22A08BFB10066A94D /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC32A12A08BFB10066A94D /* EditView.swift */; };
+		D6CC32A42A08C3DA0066A94D /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC32A32A08C3DA0066A94D /* RegisterViewModel.swift */; };
+		D6CC32A62A08C3EF0066A94D /* EditViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC32A52A08C3EF0066A94D /* EditViewModel.swift */; };
 		DA4F1B8E2A012C4900A0AF20 /* TastManagerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4F1B8D2A012C4900A0AF20 /* TastManagerService.swift */; };
 		DA88E9E62A014D6C00DB773F /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA88E9E52A014D6C00DB773F /* DatePickerView.swift */; };
 		DA88E9E82A01533600DB773F /* ListCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA88E9E72A01533600DB773F /* ListCellViewModel.swift */; };
@@ -29,6 +37,14 @@
 		2351D92D4391ABCDF99609E3 /* Pods-DeadLiner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeadLiner.debug.xcconfig"; path = "Target Support Files/Pods-DeadLiner/Pods-DeadLiner.debug.xcconfig"; sourceTree = "<group>"; };
 		403BC0AE5E4875C00FAA81FF /* Pods-DeadLiner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeadLiner.release.xcconfig"; path = "Target Support Files/Pods-DeadLiner/Pods-DeadLiner.release.xcconfig"; sourceTree = "<group>"; };
 		9434BE31FE00B4A01F4C63ED /* Pods_DeadLiner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeadLiner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D62987722A08871500CBE2E7 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		D62987742A0888AA00CBE2E7 /* TaskService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskService.swift; sourceTree = "<group>"; };
+		D6CC32992A08B8A60066A94D /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		D6CC329B2A08BC1F0066A94D /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		D6CC329F2A08BFA00066A94D /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		D6CC32A12A08BFB10066A94D /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		D6CC32A32A08C3DA0066A94D /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		D6CC32A52A08C3EF0066A94D /* EditViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewModel.swift; sourceTree = "<group>"; };
 		DA4F1B8D2A012C4900A0AF20 /* TastManagerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastManagerService.swift; sourceTree = "<group>"; };
 		DA88E9E52A014D6C00DB773F /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
 		DA88E9E72A01533600DB773F /* ListCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCellViewModel.swift; sourceTree = "<group>"; };
@@ -118,6 +134,8 @@
 				DA88E9E52A014D6C00DB773F /* DatePickerView.swift */,
 				DA88E9E92A01890D00DB773F /* AddScheduleButtonView.swift */,
 				DA9AC0672A02B55C0097129F /* ListCellCheckboxView.swift */,
+				D6CC329F2A08BFA00066A94D /* RegisterView.swift */,
+				D6CC32A12A08BFB10066A94D /* EditView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -125,9 +143,14 @@
 		DA8AFF712A006AD600C1F8B4 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				D62987742A0888AA00CBE2E7 /* TaskService.swift */,
+				D6CC329B2A08BC1F0066A94D /* ContentViewModel.swift */,
+				D6CC32992A08B8A60066A94D /* ListViewModel.swift */,
 				DA88E9E72A01533600DB773F /* ListCellViewModel.swift */,
 				DA9AC0652A029FA10097129F /* AddScheduleButtonViewModel.swift */,
 				DA9AC0692A02B6530097129F /* ListCellCheckboxViewModel.swift */,
+				D6CC32A32A08C3DA0066A94D /* RegisterViewModel.swift */,
+				D6CC32A52A08C3EF0066A94D /* EditViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -136,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				DAA858A62A012F1000FE9034 /* Task.swift */,
+				D62987722A08871500CBE2E7 /* History.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -194,7 +218,7 @@
 				};
 			};
 			buildConfigurationList = DA8AFF5A2A006AB500C1F8B4 /* Build configuration list for PBXProject "DeadLiner" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -270,11 +294,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6CC32A62A08C3EF0066A94D /* EditViewModel.swift in Sources */,
 				DA8AFF772A006DD500C1F8B4 /* ListCellView.swift in Sources */,
 				DA4F1B8E2A012C4900A0AF20 /* TastManagerService.swift in Sources */,
+				D62987732A08871500CBE2E7 /* History.swift in Sources */,
+				D6CC329C2A08BC1F0066A94D /* ContentViewModel.swift in Sources */,
 				DA8AFF652A006AB500C1F8B4 /* ContentView.swift in Sources */,
+				D6CC32A22A08BFB10066A94D /* EditView.swift in Sources */,
 				DA9AC0682A02B55C0097129F /* ListCellCheckboxView.swift in Sources */,
+				D62987752A0888AA00CBE2E7 /* TaskService.swift in Sources */,
+				D6CC32A02A08BFA00066A94D /* RegisterView.swift in Sources */,
+				D6CC329A2A08B8A60066A94D /* ListViewModel.swift in Sources */,
 				DA8AFF632A006AB500C1F8B4 /* DeadLinerApp.swift in Sources */,
+				D6CC32A42A08C3DA0066A94D /* RegisterViewModel.swift in Sources */,
 				DA8AFF752A006C3700C1F8B4 /* ListView.swift in Sources */,
 				DA9AC0662A029FA10097129F /* AddScheduleButtonViewModel.swift in Sources */,
 				DAA858A72A012F1000FE9034 /* Task.swift in Sources */,
