@@ -14,7 +14,7 @@ class Task: Object, ObjectKeyIdentifiable {
   @Persisted var body: String
   @Persisted var isOverdate: Bool
   
-  convenience init(title: String, data: Date, body: String) {
+  convenience init(title: String, date: Date, body: String) {
     self.init()
     self.title = title
     self.date = date
