@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class ListCellCheckboxViewModel: ObservableObject {
+final class ListCellCheckboxViewModel: TaskService {
   @Published var isCheckBoxTapped = false
   
   func checkBoxTapped() {

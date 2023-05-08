@@ -8,22 +8,24 @@
 import SwiftUI
 
 struct ListView: View {
-  @State var date = Date()
+  @ObservedObject private(set) var listViewModel: ListViewModel
   
   var body: some View {
     List {
-      ListCellView(
-        date: $date,
-        listCellViewModel: ListCellViewModel()
-      )
+      ForEach(listViewModel.userData) { task in
+        ListCellView(listCellViewModel: ListCellViewModel(task: task, withService: listViewModel.service))
+      }
+      .onDelete { index in
+        listViewModel.deleteCell(index: index)
+      }
     }
     .listStyle(.grouped)
     .scrollContentBackground(.hidden)
   }
 }
 
-struct ListView_Previews: PreviewProvider {
-  static var previews: some View {
-    ListView()
-  }
-}
+//struct ListView_Previews: PreviewProvider {
+//  static var previews: some View {
+//    ListView()
+//  }
+//}

@@ -27,7 +27,7 @@ struct AddScheduleButtonView: View {
       )
       .foregroundColor(Color.black)
       .sheet(isPresented: $addScheduleButtonViewModel.isAddButtonTapped) {
-        DatePickerView()
+        RegisterView(registerViewModel: RegisterViewModel(withService: addScheduleButtonViewModel.service))
       }
     }
   }
@@ -35,6 +35,6 @@ struct AddScheduleButtonView: View {
 
 struct AddScheduleButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        AddScheduleButtonView(addScheduleButtonViewModel: AddScheduleButtonViewModel())
+      AddScheduleButtonView(addScheduleButtonViewModel: AddScheduleButtonViewModel(withService: TaskManagerService()))
     }
 }

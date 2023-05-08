@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+  @ObservedObject private(set) var contentViewModel: ContentViewModel
+  
     var body: some View {
       VStack {
         Text("List")
           .font(.system(size: 20))
-        ListView()
-        AddScheduleButtonView( addScheduleButtonViewModel: AddScheduleButtonViewModel())
+        ListView(listViewModel: ListViewModel(withService: contentViewModel.service))
+        AddScheduleButtonView( addScheduleButtonViewModel: AddScheduleButtonViewModel(withService: TaskManagerService()))
       }
     }
 }
