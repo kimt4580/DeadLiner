@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class AddScheduleButtonViewModel: ObservableObject {
+final class AddScheduleButtonViewModel: TaskService {
   @Published var isAddButtonTapped = false
   
   func addButtonTapped() {

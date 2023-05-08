@@ -8,24 +8,24 @@
 import SwiftUI
 
 struct DatePickerView: View {
-  @State var date = Date()
-  @State private var text: String = ""
+  @Binding var taskTitle: String
+  @Binding var taskBody: String
+  @Binding var taskDate: Date
   
   var body: some View {
     VStack {
-      Text("Title")
+      TextField("Title", text: $taskTitle)
         .font(.system(size: 18))
         .padding()
-      Text("현재 목표 시간 : 2023-05-11 15:00")
       DatePicker (
         "",
-        selection: $date,
+        selection: $taskDate,
         in: Date()...,
         displayedComponents: [.date, .hourAndMinute]
       )
       .datePickerStyle(.graphical)
       .background(Color.clear)
-     TextEditor(text: $text)
+     TextEditor(text: $taskBody)
         .background(Color.clear)
         .foregroundColor(Color.black)
         .border(.black)
@@ -34,8 +34,8 @@ struct DatePickerView: View {
   }
 }
 
-struct DatePickerView_Previews: PreviewProvider {
-  static var previews: some View {
-    DatePickerView()
-  }
-}
+//struct DatePickerView_Previews: PreviewProvider {
+//  static var previews: some View {
+//    DatePickerView()
+//  }
+//}
