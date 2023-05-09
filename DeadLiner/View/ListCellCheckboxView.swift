@@ -24,8 +24,8 @@ struct ListCellCheckboxView: View {
     }
 }
 
-//struct ListCellCheckboxView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ListCellCheckboxView()
-//    }
-//}
+struct ListCellCheckboxView_Previews: PreviewProvider {
+    static var previews: some View {
+      ListCellCheckboxView(listCellCheckboxViewModel: ListCellCheckboxViewModel(withService: TaskManagerService()))
+    }
+}
