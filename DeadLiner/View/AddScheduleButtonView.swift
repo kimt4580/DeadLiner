@@ -12,23 +12,24 @@ struct AddScheduleButtonView: View {
   @ObservedObject private(set) var addScheduleButtonViewModel: AddScheduleButtonViewModel
   
   var body: some View {
-    HStack(alignment: .bottom) {
-      Button {
-        addScheduleButtonViewModel.addButtonTapped()
-      } label: {
-        Image(systemName: "plus.circle.fill")
-          .resizable()
-          .frame(width: 55, height: 55)
-          .aspectRatio(contentMode: .fill)
+    VStack(alignment: .trailing) {
+      Spacer()
+      HStack {
+        Spacer()
+        Button {
+          addScheduleButtonViewModel.addButtonTapped()
+        } label: {
+          Image(systemName: "plus.circle.fill")
+            .resizable()
+            .frame(width: 55, height: 55)
+            .aspectRatio(contentMode: .fill)
+        }
+        .foregroundColor(Color.black)
+        .sheet(isPresented: $addScheduleButtonViewModel.isAddButtonTapped) {
+          RegisterView(registerViewModel: RegisterViewModel(withService: addScheduleButtonViewModel.service))
+        }
       }
-      .frame(
-        maxHeight: .infinity,
-        alignment: .bottom
-      )
-      .foregroundColor(Color.black)
-      .sheet(isPresented: $addScheduleButtonViewModel.isAddButtonTapped) {
-        RegisterView(registerViewModel: RegisterViewModel(withService: addScheduleButtonViewModel.service))
-      }
+      .padding()
     }
   }
 }
